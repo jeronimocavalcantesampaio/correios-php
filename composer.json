@@ -1,0 +1,37 @@
+{
+    "name": "jeronimocavalcantesampaio/correios-php",
+    "description": "Classes para acessar o sistema da SIGEP dos correios",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jeronimo Sampaio",
+            "email": "jeronimocavalcantesampaio@hotmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "ext-json": "*",
+        "ext-curl": "*",
+        "ext-simplexml": "*",
+        "ext-libxml": "*",
+        "ext-dom": "*",
+        "tecnickcom/tcpdf": "^6.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.0 | ^7.0 | ^8.0 | ^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Eduardokum\\CorreiosPhp\\": "src"
+        },
+        "files":    [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Eduardokum\\CorreiosPhp\\Tests\\": "tests"
+        }
+    }
+}
